@@ -6,11 +6,11 @@
 var EirCode
 function EnterEirCode ()
 {
-Eircode = prompt("please enter your eir code","e.g. H87 X4RD");
+EirCode = prompt("please enter your eir code","e.g. H87 X4RD");
 }
 function checkEirCode (EirCode)
 {
-if (EirCode.lenght >=8
+if (EirCode.length >=8)
 return true
 else
 return false
@@ -20,9 +20,10 @@ return false
 <body>
 <script>
 EnterEirCode()
+
 while (!checkEirCode(EirCode))
 {
-alert("Eir Code Has Too Few Characters.");
+alert("EirCode Has Too Few Characters.");
 EnterEirCode();
 }
 alert("Thanks for entering your eir code");
